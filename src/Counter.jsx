@@ -6,7 +6,7 @@ const Counter = () => {
 
     const decrementCount = ()=>{
         if(count>0){
-            setCount(count-1)
+            setCount(prevValue=>prevValue-1)
         }
     }
 
@@ -14,7 +14,7 @@ const Counter = () => {
     <div className='style_counter'>
         <h1>Counter : {count}</h1>
         <div className='style_button'>
-        <button onClick={()=>setCount(count+1)}>Increment</button>
+        <button onClick={()=>setCount(prevValue => prevValue +1)}>Increment</button>
         <button onClick={decrementCount}>Decrement</button>
         <button onClick={()=>setCount(initialState)}>Reset</button>
         </div>
