@@ -1,0 +1,14 @@
+.style_counter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.style_button button{
+    margin-right: 10px;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
